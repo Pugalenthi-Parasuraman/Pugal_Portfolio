@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    margin: auto;
+}
+
+.container{
+    @apply custom-800:flex-row-reverse custom-800:flex custom-800:items-center custom-800:justify-evenly ;
+}
+
+#hero{
+    @apply custom-800:max-w-[350px] custom-800:w-[350px];
+}
+

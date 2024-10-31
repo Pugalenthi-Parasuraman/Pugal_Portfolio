@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Rubik:wght@800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --background-color: #fff;
+    --btn-color: #0987f2;
+    --btn-text-color: #fff;
+    --project-card-bg: #ffffff00;
+    --text-color: #222;
+    --form-text-color: #555;
+    --footer-text-color: #888;
+}
+
+[data-theme='dark']{
+    --background-color: #222;
+    --btn-color: #fff;
+    --btn-text-color: #222;
+    --project-card-bg: #fff;
+    --text-color: #fff;
+    --form-text-color: #fff;
+    --footer-text-color: #bbb;
+}
+
+body{
+    background-color: var(--background-color);
+    @apply flex justify-center items-center mr-auto mt-0 mb-60;
+}
+
+#root{
+    @apply flex flex-col gap-[60px]  md:gap-[100px]  xl:gap-[200px];
+}
+
+h1,h2,h3{
+    color: var(--text-color);
+    @apply m-0 p-0 ;
+}
+
+h1{
+    @apply md:text-5xl;
+}
+
+h2,h3{
+    @apply sm:text-[20px] md:text-[24px];
+}
+
+p{
+    color: var(--footer-text-color);    
+    @apply m-0 p-0 md:text-[20px]  sm:text-lg;
+}
+
+h2, h3, p{
+    @apply font-roboto ;
+}
+
+.social a {
+    @apply m-0 w-fit ;
+    align-self: center;
+}
+
+button{
+    background-color: var(--btn-color);
+    color: var(--footer-text-color);
+}
+
+.sectionTitle{
+    @apply lg:mb-[0px] xl:mb-[10px] ;
+}
+
+

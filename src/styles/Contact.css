@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea ,input{
+    @apply h-[50px] w-[250px] rounded-2xl justify-self-center xl:w-[600px] md:w-[500px] xl:text-xl;
+    background-color: var(--background-color);
+    color: var(--form-text-color);
+    border: #888 1px solid;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    color: var(--form-text-color);
+}
+
+input[type='submit']{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    margin: auto;
+}

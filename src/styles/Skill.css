@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skillList hr{
+    @apply w-[180px] xl:w-[300px] h-[2px] border-none my-[0px] mx-auto ;
+    background-color: var(--text-color);
+}
+
+.skillList{
+   @apply xl:max-w-4xl md:max-w-4xl xl:flex-col md:flex-col gap-8 flex justify-evenly items-center flex-wrap gap-y-8 max-w-[26ch];
+}
