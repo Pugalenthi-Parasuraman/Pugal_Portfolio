@@ -66,7 +66,7 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-          <section id="music" className="p-4">
+          <section id="music" className="p-1">
            
             <Audio/>
           </section>

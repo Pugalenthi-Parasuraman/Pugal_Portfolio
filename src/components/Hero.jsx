@@ -50,13 +50,13 @@ function Hero() {
           Web Developer
         </h2>
         <span className="flex justify-center gap-5 social">
-          <a href="">
+          <a href="https://linkedin.com/in/pugalenthi-p">
             <img src={linkedinIcon} alt="Linkedin icon" className="w-12" />
           </a>
-          <a href="">
+          <a href="https://github.com/Pugalenthi-Parasuraman">
             <img src={githubIcon} alt="Github icon" className="w-12" />
           </a>
-          <a href="">
+          <a href="https://x.com/PUGALENTHI_123">
             <img src={twitterIcon} alt="Twitter icon" className="w-12" />
           </a>
         </span>
