@@ -15,8 +15,7 @@ function Projects() {
     >
       <h1
         className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle "
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
+        data-aos="zoom-in"
       >
         Projects
       </h1>

@@ -9,10 +9,7 @@ function Contact() {
     >
       <h1
         className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
+        data-aos="zoom-in"
       >
         Contact
       </h1>
