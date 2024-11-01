@@ -1,19 +1,23 @@
-import React from 'react';
+import React from "react";
 import checkMarkIcon from "../assets/svg/checkmark-dark.svg";
-import SkillList from './SkillList';
-import "../styles/Skill.css"
+import SkillList from "./SkillList";
+import "../styles/Skill.css";
 
 function Skills() {
+
   return (
     <section
       id="skills"
-      className="container flex flex-col text-center gap-10 "
+      className="container  flex flex-col text-center gap-10 "
     >
-      <h1 className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle">
+      <h1
+        className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle"
+        data-aos="zoom-in"
+      >
         Skills
       </h1>
-      <div className="skillList ">
-        <span className="xl:flex  xl:flex-row xl:gap-16 md:flex-row md:gap-10 gap-12 skillList">
+      <div className="skillList " data-aos="fade-up">
+        <span className="xl:flex xl:flex-row xl:gap-16 md:flex-row md:gap-10 gap-12 skillList">
           <SkillList src={checkMarkIcon} skill="HTML" />
           <SkillList src={checkMarkIcon} skill="CSS" />
           <SkillList src={checkMarkIcon} skill="JS" />
@@ -37,4 +41,4 @@ function Skills() {
   );
 }
 
-export default Skills
+export default Skills;

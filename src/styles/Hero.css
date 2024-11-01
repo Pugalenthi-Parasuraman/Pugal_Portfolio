@@ -13,7 +13,7 @@ button{
     @apply custom-800:flex-row-reverse custom-800:flex custom-800:items-center custom-800:justify-evenly ;
 }
 
-#hero{
+#home{
     @apply custom-800:max-w-[350px] custom-800:w-[350px];
 }
 

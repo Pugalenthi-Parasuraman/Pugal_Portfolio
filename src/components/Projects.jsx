@@ -1,17 +1,23 @@
-import React from 'react';
-import kfc from "../assets/images/KFC.png"
-import mehndi from "../assets/images/Mehndi.png"
-import fruit from "../assets/images/Fruit Shop.png"
-import ProjectsCard from './ProjectsCard';
-import "../styles/Projects.css"
+import React from "react";
+import kfc from "../assets/images/KFC.png";
+import mehndi from "../assets/images/Mehndi.png";
+import fruit from "../assets/images/Fruit Shop.png";
+import ProjectsCard from "./ProjectsCard";
+import "../styles/Projects.css";
+
 
 function Projects() {
+
   return (
     <section
       id="projects"
-      className="container  flex flex-col text-center gap-10"
+      className="container  flex flex-col text-center gap-10 "
     >
-      <h1 className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle ">
+      <h1
+        className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle "
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         Projects
       </h1>
       <div className="projectContainer md:flex-row md:flex-wrap md:justify-evenly md:px-[30px] flex flex-col align items-center md:gap-20 gap-10 xl:gap-30 justify-center">
@@ -38,4 +44,4 @@ function Projects() {
   );
 }
 
-export default Projects
+export default Projects;

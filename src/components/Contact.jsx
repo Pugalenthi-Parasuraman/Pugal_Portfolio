@@ -5,14 +5,21 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="container flex flex-col text-center  gap-10"
+      className="container  flex flex-col text-center  gap-10"
     >
-      <h1 className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle">
+      <h1
+        className="lg:text-4xl md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
         Contact
       </h1>
       <form
         action=""
         className="flex flex-col gap-[30px] xl:gap-[40px] md:gap-[40px]"
+        data-aos="zoom-in"
       >
         <div className="formGroup">
           <label htmlFor="name" hidden>

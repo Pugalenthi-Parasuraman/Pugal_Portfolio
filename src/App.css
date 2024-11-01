@@ -9,7 +9,7 @@
     --btn-color: #0987f2;
     --btn-text-color: #fff;
     --project-card-bg: #ffffff00;
-    --text-color: #222;
+    --text-color: #222222;
     --form-text-color: #555;
     --footer-text-color: #888;
 }
@@ -30,7 +30,7 @@ body{
 }
 
 #root{
-    @apply flex flex-col gap-[60px]  md:gap-[100px]  xl:gap-[200px];
+    @apply flex flex-col gap-[100px]  md:gap-[100px]  xl:gap-[100px];
 }
 
 h1,h2,h3{

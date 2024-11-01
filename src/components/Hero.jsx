@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg from "../assets/images/hero-img.png";
 import sun from "../assets/svg/sun.svg";
-import moon from "../assets/svg/moon.svg"
+import moon from "../assets/svg/moon.svg";
 import linkedinLight from "../assets/svg/linkedin-light.svg";
 import linkedinDark from "../assets/svg/linkedin-dark.svg";
 import githubLight from "../assets/svg/github-light.svg";
@@ -13,20 +13,20 @@ import { useTheme } from "./ThemeContext";
 import "../styles/Hero.css";
 
 function Hero() {
+  
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun: moon;
+  const themeIcon = theme === "light" ? sun : moon;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark ;
-  
+  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
 
   return (
     <section
-      id="hero"
-      className="container lg:flex-row-reverse lg:items-center flex flex-col align items-center justify-center gap-20 text-center xl:h-dvh min-h-[500px] mx-auto"
+      id="home"
+      className="container lg:flex-row-reverse lg:items-center flex flex-col align items-center justify-center gap-20 text-center  min-h-[500px] mx-auto"
     >
-      <div className="colorModeContainer relative">
+      <div className="colorModeContainer relative " data-aos="fade-left">
         <img
           className="hero lg:max-w-[340px] lg:w-[320px] w-60 "
           src={heroImg}
@@ -39,8 +39,11 @@ function Hero() {
           onClick={toggleTheme}
         />
       </div>
-      <div className="info flex flex-col gap-4 ">
-        <h1 className="lg:text-4xl flex flex-col gap-20 md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle info">
+      <div className="info flex flex-col gap-4 " data-aos="fade-right">
+        <h1
+          className="lg:text-4xl flex flex-col gap-20 md:text-3xl text-2xl font-black font-rubik uppercase sectionTitle info"
+          data-aos="zoom-out"
+        >
           Pugalenthi
         </h1>
         <h2 className="sm:text-[20px] md:text-[25px] text-xl font-bold uppercase">
