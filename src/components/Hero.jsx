@@ -8,7 +8,7 @@ import githubLight from "../assets/svg/github-light.svg";
 import githubDark from "../assets/svg/github-dark.svg";
 import twitterLight from "../assets/svg/twitter-light.svg";
 import twitterDark from "../assets/svg/twitter-dark.svg";
-import resume from "../assets/images/resume.pdf";
+import resume from "../assets/images/Pugalenthi_P.pdf";
 import { useTheme } from "./ThemeContext";
 import "../styles/Hero.css";
 

@@ -10,7 +10,7 @@ function ProjectsCard({ src, link, h3, p }) {
       <img
         src={src}
         alt={`${h3} logo`}
-        className="w-52 KFC rounded-[20px]"
+        className="w-80 KFC rounded-[5px]"
         data-aos="flip-left"
       />
       <span data-aos="zoom-out">

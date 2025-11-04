@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Audio from "./Audio";
 
 const Navbar = () => {
   const [percent, setPercent] = useState(0);
@@ -25,23 +24,27 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-    const handleScroll = (id) => {
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const navHeight = 80; // Adjust this based on your navbar height (py-4 = ~64px, py-5 = ~80px, py-6 = ~96px)
+      const sectionTop = section.offsetTop - navHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+  };
 
-  
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center">
       <div className="">
         <div
           className="fixed inset-x-0 top-0 z-50 h-0.5 mt-0.5 bg-blue-500"
           style={{ width: `${percent}%` }}
         ></div>
 
-        <nav className="flex justify-around py-4  bg-white/80 backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10 ">
+        <nav className="flex justify-around py-4 bg-white/80 backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10">
           <div className="flex items-center">
             <a className="cursor-pointer">
               <h6 className="text-xl font-roboto font-black text-black uppercase">
@@ -55,7 +58,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <button
                 key={index}
-                onClick={() => handleScroll(link.id)} // Call handleScroll with the link's id
+                onClick={() => handleScroll(link.id)}
                 className={`flex text-gray-600 ${
                   link.name === "Themes"
                     ? "font-semibold text-blue-600"
@@ -66,10 +69,6 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-          <section id="music" className="p-1">
-           
-            <Audio/>
-          </section>
         </nav>
       </div>
     </div>

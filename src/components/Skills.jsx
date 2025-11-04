@@ -36,6 +36,10 @@ function Skills() {
           <SkillList src={checkMarkIcon} skill="Git" />
           <SkillList src={checkMarkIcon} skill="Github" />
         </span>
+        <hr />
+        <span className="xl:flex  xl:flex-row xl:gap-16 gap-12 md:flex-row md:gap-10 skillList">
+          <SkillList src={checkMarkIcon} skill="Java" />
+        </span>
       </div>
     </section>
   );
